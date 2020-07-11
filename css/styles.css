@@ -1,0 +1,131 @@
+/* color palette
+
+#000 black  #333 grey  #339 blue  #ccc   #cff green  #eff lightgreen   #fff */
+
+/*-------------------------------------------
+------------------------- Global Section ---------------------------*/
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10pt;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*-------------------------------------------
+------------------------- Header Section ---------------------------*/
+header{
+    background-color: #333;
+    display: flex;
+    align-items: center;
+}
+
+#trex {
+    height: 65px;
+    margin-left: 10px;
+}
+
+.headerNav {
+    flex: 1 1 auto;
+    justify-content: flex-end;
+}
+
+.headerNav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+.headerNav ul a {
+    color: #fff;
+    border: 1px solid white;
+    padding: 4px;
+    margin-right: 16px;
+    border-radius: 5px;
+}
+
+.headerNav ul a:hover {
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+}
+
+
+
+/*-------------------------------------------
+------------------------- Main Section ---------------------------*/
+main {
+    display: flex;
+    margin-top: 1em;
+}
+
+aside {
+    flex: 3 1 0;
+    display: flex;
+    flex-direction: column;
+    margin-right: .4em;
+}
+
+aside > :first-child {
+    font-weight: 700;
+    background: #cff;
+    padding: 1.5em;
+}
+aside > div > a {
+    display: block;
+    padding: .7em;
+    padding-left: 1.5em;
+    background: #eff;
+    color: #339;
+}
+
+aside > div > a:hover {
+    background: #cff;
+}
+
+
+
+
+
+          /*------------------ Start main body ------------------*/
+.mainContent {
+    flex: 7 1 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px 16px 16px;
+    margin-left: 0.4em;
+}
+.mainContent h2 {
+    margin-top: 0;
+}
+#ice_cream {
+    max-width: 300px;
+    align-self: center;
+}
+
+
+
+/*-------------------------------------------
+------------------------- Footer Section ---------------------------*/
+footer {
+    background: #333;
+}
+footer p {
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1;
+    padding: 10px;
+}
